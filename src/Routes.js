@@ -4,6 +4,7 @@ import asyncComponent from "./components/AsyncComponent";
 import AppliedRoute from "./components/AppliedRoute";
 import AuthenticatedRoute from "./components/AuthenticatedRoute";
 import UnauthenticatedRoute from "./components/UnauthenticatedRoute";
+import Settings from "./containers/Settings";
 
 const AsyncHome = asyncComponent(() => import("./containers/Home"));
 const AsyncLogin = asyncComponent(() => import("./containers/Login"));
@@ -30,6 +31,12 @@ export default ({ childProps }) =>
       path="/signup"
       exact
       component={AsyncSignup}
+      props={childProps}
+    />
+    <AuthenticatedRoute
+      path="/settings"
+      exact
+      component={Settings}
       props={childProps}
     />
     <AuthenticatedRoute
