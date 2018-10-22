@@ -1,11 +1,11 @@
 const dev = {
   s3: {
     REGION: "us-east-1",
-    BUCKET: "notes-app-2-api-dev-serverlessdeploymentbucket-2gpdcj4tq376"
+    BUCKET: "notes-app-2-api-dev-attachmentsbucket-1rft5bwcc18fp"
   },
   apiGateway: {
     REGION: "us-east-1",
-    URL: "https://vy5ko5j9yd.execute-api.us-east-1.amazonaws.com"
+    URL: "https://vy5ko5j9yd.execute-api.us-east-1.amazonaws.com/dev"
   },
   cognito: {
     REGION: "us-east-1",
@@ -23,7 +23,7 @@ const prod = {
   },
   apiGateway: {
     REGION: "us-east-1",
-    URL: "https://7l7s7n3mr9.execute-api.us-east-1.amazonaws.com"
+    URL: "https://7l7s7n3mr9.execute-api.us-east-1.amazonaws.com/prod"
   },
   cognito: {
     REGION: "us-east-1",
